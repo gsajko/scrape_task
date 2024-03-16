@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "scrape-task"
+version = "0.1.0"
+description = ""
+authors = ["gsajko <grzegorz.sajko@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "scrape_task"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+beautifulsoup4 = "^4.12.3"
+requests = "^2.31.0"
+tweety-ns = "^1.0.9.7"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.2"
+black = "^24.2.0"
+ipykernel = "^6.29.3"
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.nox
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | data/fuel_data
+  )/
+)
+'''
+[tool.ruff]
+lint.select = [
+    # Pyflakes
+    "F",
+    # Pycodestyle
+    "E",
+    "W",
+    # isort
+    "I"
+]
