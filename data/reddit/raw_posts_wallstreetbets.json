@@ -1,9 +1,63 @@
 [
     {
+        "title": "Reddit is increasing the amount of ads being shown ahead of their IPO",
+        "url": "https://old.reddit.com/r/wallstreetbets/comments/1bgglej/reddit_is_increasing_the_amount_of_ads_being/",
+        "nr_comments": 11,
+        "upvotes": "\u2022",
+        "content": {
+            "text": "Puts on reddit.\n",
+            "gallery": []
+        }
+    },
+    {
+        "title": "What does an SP 500 Index Fund/ETF do during a recession?",
+        "url": "https://old.reddit.com/r/wallstreetbets/comments/1bggd4b/what_does_an_sp_500_index_fundetf_do_during_a/",
+        "nr_comments": 21,
+        "upvotes": "\u2022",
+        "content": {
+            "text": "I want to learn more about these for my Roth. Apparently these intruments let me buy into a fund that manages a portfolio of the most popular stocks based on some variables they have defined. I'm curious though - what do they do during a recession? I'm trying to bank on the SP500 averaging 10% over many years for my retirement. Do they mostly sell during a recession so that I still receive some gains? Do they buy up stock at lower prices? Not looking for financial advice, just curious to learn more\n",
+            "gallery": []
+        }
+    },
+    {
+        "title": "My (ALMOST) Invincible Call Credit Spread Strategy",
+        "url": "https://old.reddit.com/r/wallstreetbets/comments/1bgg3f3/my_almost_invincible_call_credit_spread_strategy/",
+        "nr_comments": 18,
+        "upvotes": "\u2022",
+        "content": {
+            "text": "I got a shit ton of interest on a different thread and in my DMs, so I'm going to post this. I should be selling this, really. I'll probably delete this later.\nLet me caveat by saying this: I am working on a degree in mathematics and my father taught me how to paper trade when I was only 6 or 7, I've been doing this for 20 years, but I only created this strategy a couple months ago. I say created because every formula I use to calculate my shit is self-made. My math isn't perfect yet. I'm also NOT a financial advisor. Please don't take this as advice.\nTL;DR. Basically, I sell call credit spreads way out of the money on earnings week on stocks that aren't really great based on traditional technical analysis. If you don't know how this works, or how to do technical analysis, that's a completely separate chunk of information. Some may call this \"picking up pennies in front of a steamroller\" but I wouldn't call what I'm making \" pennies.\" and I wouldn't call stocks like Dollar General, Dollar Tree, and Ulta Beauty \"steamrollers\", but ok.\nOk, ready? Good. I'm gonna post this picture - my model - and explain what each line means. Then, I'm gonna explain how I use the info.\nCall Credit Spread Model - 3/18 - 3/22\n\nLine 1-3: Stock Info. This should be self-explanatory. The O/price avg is the sum of the at the midpoint of the at the money (ATM) call and ATM put. I use this to calculate the Implied movement (IM) in line 8.\nLine 4-7: Credit Spread Info. This is info on the actual credit spread I'm potentially going to sell. SL=Price of the Short Leg; LL=Price of the Long Leg; Premium = how much premium I expect to get for selling the spread. SL Delta = Delta of the short leg. SL Delta is important because, for many mathematical reasons, it tells you the rough probability of your buyer being successful. ex. LULU 585/595 the buyer would have a 4% chance of being successful. I use the short leg because if the price of the stock goes above my short leg, I start to lose money, and that's no bueno.\nLine 8-11: Stats. These are where I start to use my own formulas to determine whether I actually think it's a good idea. Gain = % portfolio gain expected if you sell the spread and win. IM = Implied Movement of the stock during earnings week. % to loss = how much the stock has to go up to cross the short leg and lose money. IM/Loss Ratio = how many times more than the IM the stock would have to move to cross my short leg.\nLine 12-14: My Scores. My safety score is calculated using by weighing the Delta and IM/loss ratio, taking into account the width of the spread as a percentage of the stock price. It's not out of 100, but the higher the better. My Risk/Reward Score is based on the mathematical concept of fair wagering based on the odds of loss. ex. if a wager is 50/50, the winner should receive back 200% of their wager; however, in a 90/10 wager, The one with a 90% chance to win should receive back only 111.1% of their wager. I use the inverse of the delta to determine the \"ideal\" reward (options are never ideal) and compare it to the actual reward for selling the spread. This one IS out of 100, So that LULU 585/595 spread is 71.7% of ideal.\nMisc. If you really want to know what this is, you can probably figure it out. I use it more in my put selling model. Also, I have META listed as a control, since sometimes earnings stocks can be weird, just to make sure my model is working correctly.\n\nOk, so every weekend, I compile my list, then, I take the ones with the best \"Dave Score\" (I wasn't planning on posting this, so I didn't get too creative) and go look at the stock. Generally, If I am actually bearish on a stock, I'll pull the trigger Monday at open. If I am generally bullish on the stock, I pull the trigger as close to the closing bell before they report earnings. Why? If a stock has bullish momentum, the IV is gonna skyrocket exponentially until the report, and the stock is likely to go up pre-earnings too. So, it's better to wait.\nYou might ask: Why do you use a bearish strategy even if you're bullish? Simple. People are regarded. They pay way too fucking much for options the week of earnings. If someone is willing to pay for call options 30% out of the money on an overvalued company, who am I to deny them? 1 or 2 out of 100 times, they win. That's why I use that analysis to decide which ones are most likely to win for me. And indeed, I have won. All of them. About 25 total trades in a row out of 70-ish that I've analyzed. ONE of those 70 would have lost (DELL). But my model saw it coming, so i stayed away. I've made anywhere from 3-15% per week depending on how many of these I run per week. I started almost 3 months ago.\nThis is how my model looked when it was just a baby about a month ago - before I optimized it and did primarily earnings.\nMy first real model\nMy Model V2.\nIf any of you are planning on buying these LULU calls from me, I suggest not doing it.\nWhy call credit spreads and not put credit spreads? Because people are generally bullish on literally everything.\nWill this eventually fail? Mathematically, yes. Over a long enough timeframe and enough samples, anything will fail. That's why I made the model, to keep me as far away from failure as possible until I have enough money to have financial freedom. Hopefully I only have to do this a couple more months. It's not sustainable forever. Should you do it? It's not guaranteed, but sure, I don't care. If you want to use my model this week, go ahead.\nIf you have questions, DM me. If you want me to make a course so you can buy it from me, DM me. I'm not gonna make a course, but it will make me laugh.\nGood luck and happy trading.\n",
+            "gallery": []
+        }
+    },
+    {
+        "title": "Ok apes, let\u2019s discuss this\u2026",
+        "url": "https://old.reddit.com/r/wallstreetbets/comments/1bgf76r/ok_apes_lets_discuss_this/",
+        "nr_comments": 163,
+        "upvotes": "\u2022",
+        "content": {
+            "text": null,
+            "gallery": [
+                "https://i.redd.it/6j68d86a9roc1.jpeg"
+            ]
+        }
+    },
+    {
+        "title": "Mara puts, btc crash this weekend",
+        "url": "https://old.reddit.com/r/wallstreetbets/comments/1bgeq3e/mara_puts_btc_crash_this_weekend/",
+        "nr_comments": 28,
+        "upvotes": "15",
+        "content": {
+            "text": null,
+            "gallery": [
+                "https://i.redd.it/813c7cbe5roc1.jpeg"
+            ]
+        }
+    },
+    {
         "title": "Calls on NVDA,TSM or INTC? \ud83d\udc40",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bge55q/calls_on_nvdatsm_or_intc/",
-        "nr_comments": 14,
-        "upvotes": "\u2022",
+        "nr_comments": 54,
+        "upvotes": "17",
         "content": {
             "text": "Calls on INTC and TSM?\n",
             "gallery": [
@@ -14,8 +68,8 @@
     {
         "title": "SMCI (Super Micro Collapse) Incoming",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bgd7lw/smci_super_micro_collapse_incoming/",
-        "nr_comments": 10,
-        "upvotes": "\u2022",
+        "nr_comments": 17,
+        "upvotes": "9",
         "content": {
             "text": null,
             "gallery": [
@@ -26,8 +80,8 @@
     {
         "title": "Reddit IPO Monday",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bgc3wi/reddit_ipo_monday/",
-        "nr_comments": 23,
-        "upvotes": "5",
+        "nr_comments": 81,
+        "upvotes": "37",
         "content": {
             "text": "Any of you degenerates going to gamble the Reddit IPO on Monday, because I\u2019m half tempted to. I\u2019m slightly teetering on the line of trying to be an adult and do what\u2019s financially smart, and gambling professionally like the rest of you intelligent beings.\n",
             "gallery": []
@@ -36,8 +90,8 @@
     {
         "title": "Went full regard on calls, which ones should print?",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bg9361/went_full_regard_on_calls_which_ones_should_print/",
-        "nr_comments": 85,
-        "upvotes": "50",
+        "nr_comments": 136,
+        "upvotes": "124",
         "content": {
             "text": "Hello fellow regards, I went full regard on NVDA, TSM calls for next week GTC and TSM earnings in a month. Planning to get rid of NVDA calls after GTC if there is a high jump in the stock and it reaches 975-1000 level. For TSM, not sure if I am holding until earnings or selling before, I'll see based on how the stock moves. They should have their March earnings report come out too so that could be a good catalyst if it is good. Might lose some money of 200/220 4/19c's but those were bought just to have more shares to control for cheaper never meant to be held until expiration. \nAlong with these, I also jumped on the MSTR hype train with the short squeeze going on and the stock growing parabolic due to HF's having to buying the stock back to cut their losses. Was planning to sell this before the weekend to avoid theta, was 1k up on the call too but did not have my device to sell it so couldnt go thru with it. Planning to get out of it this week if MSTR does really good, else might try to breakeven if not.\nI also got some ORCL calls for their earnings. Since they were far OTM they got IV crushed. I was up 1k on them at one point but decided to hold for the NVDA conference due to their \"exciting partnership with NVDA in upcoming week\" announcement. Will sell the 140c's if the stock goes high due to the announcement, might get rid of most of 150c's too but will hold onto 160c's I think.\nWhat do you guys think, this yolo is gonna work? Which of these calls are gonna/not gonna print? Its either lambo or wendy's imo, I have my 60% my port in this play so hopefully it plays out.\n",
             "gallery": [
@@ -48,7 +102,7 @@
     {
         "title": "We need to talk about technical analysis",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bg84j9/we_need_to_talk_about_technical_analysis/",
-        "nr_comments": 35,
+        "nr_comments": 44,
         "upvotes": "0",
         "content": {
             "text": "In general, this sub is not a fan of using technical analysis to help guide options decisions. I was skeptical as well - I mean, looking at charts with a million imaginary lines drawn on it reminded me of Charlie and pepe silvia. Looked to me like people were drawing conclusions from imaginary data while thinking they were smarter than they really are. It also didn\u2019t help that the technical analysis often failed. \nUnfortunately, this logic is flawed for a few reasons. First of all, no trader that religiously uses TA would say their strategy is 100%. Losses happen, trends are broken, and there are plenty of variables that technical analysis cannot cover. The goal is to be better than 50%, which would have prevented many of you regards from moving in behind the Wendy\u2019s dumpster. \nSecondly, why would it be a bad thing to have more data at your disposal to help make decisions? If you choose to ignore the data and trends, that\u2019s up to you. But it will never hurt to understand the bets we\u2019re making a little better. Much of the loss porn on here come from positions that made little sense from a technical analysis perspective. \nI guess it comes down to what a trader\u2019s goal is. If they want to gamble and make speculative bets, carry on. But personally, I would like to consistently trade profitability. After all, wouldn\u2019t this sub be better if we were known for skilled plays instead of being regarded enough to populate every wendy\u2019s dumpster? The sub needs to win its wife back from her boyfriend. \n",
@@ -58,8 +112,8 @@
     {
         "title": "\"Happy Learned to Putt\" (MSTR Vol.2)",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bg5wpj/happy_learned_to_putt_mstr_vol2/",
-        "nr_comments": 45,
-        "upvotes": "299",
+        "nr_comments": 52,
+        "upvotes": "392",
         "content": {
             "text": "Running on Diesel Fuel and getting fitted for my Space Suit. \n34 inseam.  \n",
             "gallery": [
@@ -70,8 +124,8 @@
     {
         "title": "FedEx earnings",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bg3wjq/fedex_earnings/",
-        "nr_comments": 29,
-        "upvotes": "24",
+        "nr_comments": 31,
+        "upvotes": "32",
         "content": {
             "text": "Last year Q3, FedEx missed earnings but upped their full-year earnings forecast, which helped drive the stock up. Maybe a similar story this time where they perform badly but announce some mechanism to provide optimism to the stockholders?\nhttps://www.reddit.com/r/Fedexers/s/MeA6QAWTQh\nhttps://www.reddit.com/r/wallstreetbets/comments/1bfetuu/i_did_it_my_first_ever_10_bagger/?share_id=xEk2LeROoccYfi1vByVDn&utm_content=1&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1\nI have talked to many FedExer and most of them told it was a low volume seaso compare to 2_3 years ago. Many people won 10x bags last FedEx Er. \nThe things which is concerning is everyone is like \"FedEx puts for sure\" which I have seen many time goes total opposite such as in case of Costco. Also FOMOing badly. What are your thoughts? \n",
             "gallery": []
@@ -80,8 +134,8 @@
     {
         "title": "Update: winning",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bg2kp2/update_winning/",
-        "nr_comments": 33,
-        "upvotes": "240",
+        "nr_comments": 37,
+        "upvotes": "265",
         "content": {
             "text": "If I didn\u2019t sell either option I\u2019d be up another 90k \ud83e\udd21 bought shares instead because I was afraid of a correction\n",
             "gallery": [
@@ -92,8 +146,8 @@
     {
         "title": "My route to 200k",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bg1bmq/my_route_to_200k/",
-        "nr_comments": 201,
-        "upvotes": "336",
+        "nr_comments": 216,
+        "upvotes": "403",
         "content": {
             "text": "Hi Regards,\nI'll just go ahead and dive in head first:\nI've been cooking up an options trading strategy focused on the earnings reports, and I'm laying it all out here, looking for your legendary insights, roasts, and wisdom. \ud83d\ude80\ud83c\udf15\nThe Core of My Strategy:\n1. It's all about playing call options around earnings reports, targeting companies 2-3 weeks out from their big day. Puts? Nah, they're off the table due to less appealing risk/reward vibes considering capped earnings potential. If anything I would only revisit that idea in june where that seems to be the least ER releases.\n2. Keeping an eye on the VIX (and put-call ratio + a/d line) to gauge market mood swings. A high VIX might spell out more opportunities, but it's also sus.\n3. 200-day MA is my compass, guiding me through the stock's trend. Plus, comparing the stock's current stance against analyst price targets to sniff out underpriced gems. I am thinking of using Earnings Wisper. (because I'm not using my crack money)\n4. Timing is the key \u2013 I plan to exit just before earnings are announced. Trying to sidestep the \"sell the news\" trap that seems to catch the crowd off-guard and gain on the anticipation and the new open interest driving the calls price up. Only need +50%.\n5. With a starting war chest of $1,600, I'm throwing in an additional $1k each month. Targeting a 5% risk per trade, eyeing a 1.5 risk-reward ratio. Aiming for up to 12 trades a month, given that not every week is Christmas during earnings season.\nThis strategy isn't set in stone. I\u2019m on a quest for knowledge\nWhat I'm Looking For:\n\nYour Experience: Ever danced this dance before? How'd it go?\nPitfalls: Any \"gotchas\" or common traps I might be overlooking?\nOptimization Tips: How can I sharpen my strategy? Any tools, indicators, or resources you swear by?\n\nI'm all ears and ready to learn from the best (and the worst). This is essentially everything i have learned from trading maybe ~3 months every day on SPY and losing money so I wanted to try something new.\n! \ud83d\ude80\ud83c\udfb2\n",
             "gallery": []
@@ -102,8 +156,8 @@
     {
         "title": "US inflation 3.2% makes us cry but Berkshire Hathaway swims in money",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bg10bo/us_inflation_32_makes_us_cry_but_berkshire/",
-        "nr_comments": 99,
-        "upvotes": "269",
+        "nr_comments": 120,
+        "upvotes": "376",
         "content": {
             "text": "Summary: Berkshire Hathaway printing insurance money and keeping inflation up. Without shelter core inflation is at 2.2%. Rate cuts coming, Stocks go UP\nThis guy analysed the inflation data and guess who is profiting. Our beloved Warren Buffett. Without insurrance hikes we are below 2% inflation. https://www.youtube.com/watch?v=08u1BwMSKHA\n\u200b\nhttps://preview.redd.it/rzni97wujnoc1.jpg?width=780&format=pjpg&auto=webp&s=915c2614fe0b36ecaa677f8405cd85f4d32fc59c\n",
             "gallery": []
@@ -112,8 +166,8 @@
     {
         "title": "How the Federal Reserve Could Throw Stocks for a Loop",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfzojn/how_the_federal_reserve_could_throw_stocks_for_a/",
-        "nr_comments": 39,
-        "upvotes": "47",
+        "nr_comments": 50,
+        "upvotes": "57",
         "content": {
             "text": "As of midday Friday, the S&P 500 index had declined just 0.2% for the week, while the Dow Jones Industrial Average gained 0.1% and the Nasdaq composite fell 0.7%.\nWhile stocks didn\u2019t freak out about inflation, other financial markets certainly reacted. The federal-funds futures market reflects just a 58% chance that the Fed will cut interest rates at least once\u2014by July. At the end of December, there was a 75% chance of at least one cut by March.\nWhat\u2019s more, the two-year Treasury yield, a barometer for expectations about the fed-funds rate, is up more than 30 basis points for the year, to 4.7%. The last time it was at this level, in early December, the S&P 500 was 11% lower. (A basis point is 1/100th of a percentage point.)\nThe stock market is ignoring these troublesome signals\u2014and the Fed may have to provide a wake-up call at its monetary policy meeting, which ends this coming Wednesday. Almost no one expects the Fed to actually do anything\u2014there\u2019s a 99% chance it leaves rates right where they are\u2014but it\u2019s the signals about the future investors should worry about. The current \u201cdot plot\u201d suggests three cuts this year, but it\u2019s possible that could change.\n\u201cThe Fed\u2019s policy meeting next week could be a highly consequential one,\u201d writes Thierry Wizman, global foreign exchange and rates strategist at Macquarie, who notes it could \u201cformally extend the wait-and-see period.\u201d\nIf the Fed officially dashes hopes of rate cuts this year, the market would be, well, unthrilled. \u201cWe expect price action to be quite volatile as we believe that investors are placing too much emphasis on the timing and magnitude of potential Fed rate cuts, with market expectations and Fed speak seemingly at odds at the current moment,\u201d writes Brian Belski, chief investment strategist at BMO Capital Markets. \u201cWe do not view the current pace of U.S. stock market gains as sustainable.\u201d\nThe counterargument is that, under the surface, the market is showing signs that it can remain hot. More than 60% of stocks on the S&P 500 have notched gains this year, according to FactSet, so the index isn\u2019t so reliant on a handful of Big Tech names to stay afloat. With inflation still pretty hot and commodity prices up this past week, the index\u2019s energy and materials sectors gained. Even consumer staples, which broadly have strong pricing power, are flat for the week, outperforming the index.\nWill the Fed finally spark a rotation that causes the market to sink? We\u2019re about to find out.\n",
             "gallery": []
@@ -122,8 +176,8 @@
     {
         "title": "It\u2019s been one week and we\u2019ve already got two new stocks making everyone\u2019s dicks hard \ud83d\udc80",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfyie9/its_been_one_week_and_weve_already_got_two_new/",
-        "nr_comments": 100,
-        "upvotes": "769",
+        "nr_comments": 109,
+        "upvotes": "847",
         "content": {
             "text": "Apparently 150% growth YTD is the new minimum for regard approval \n",
             "gallery": [
@@ -134,8 +188,8 @@
     {
         "title": "\"We're seeing levels of speculative options trading like never before\"",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfwtoc/were_seeing_levels_of_speculative_options_trading/",
-        "nr_comments": 160,
-        "upvotes": "860",
+        "nr_comments": 174,
+        "upvotes": "971",
         "content": {
             "text": "https://www.youtube.com/watch?v=SMOpNlJz3Ik\n\"This is the biggest casino in the market right now\"\n",
             "gallery": []
@@ -144,8 +198,8 @@
     {
         "title": "Profitable after 4 yrs!",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfvz22/profitable_after_4_yrs/",
-        "nr_comments": 20,
-        "upvotes": "133",
+        "nr_comments": 23,
+        "upvotes": "144",
         "content": {
             "text": "Took a minute but i think i got it now.  Got in at close for PLTR earnings with 850$. That was Feb 2nd? 5th? Been a blur :p\n",
             "gallery": [
@@ -156,8 +210,8 @@
     {
         "title": "I feel like this fits here",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfva6g/i_feel_like_this_fits_here/",
-        "nr_comments": 51,
-        "upvotes": "2669",
+        "nr_comments": 54,
+        "upvotes": "2897",
         "content": {
             "text": "(NOT OC)\n",
             "gallery": [
@@ -168,8 +222,8 @@
     {
         "title": "What do you think?",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfuex8/what_do_you_think/",
-        "nr_comments": 458,
-        "upvotes": "3822",
+        "nr_comments": 478,
+        "upvotes": "4210",
         "content": {
             "text": null,
             "gallery": [
@@ -181,7 +235,7 @@
         "title": "The institutions always win people $NVDA",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bftdcl/the_institutions_always_win_people_nvda/",
         "nr_comments": 21,
-        "upvotes": "30",
+        "upvotes": "33",
         "content": {
             "text": "Look at when the dark pool started selling off all their shares on NVDA. https://tradytics.com/darkpool-ticker?ticker=nvda\nThe good thing is on the sentiment you can notice a reversal to the upside and the dark pool sentiment shows selling is slowing. Next week should be nice and green but we shall see.\n",
             "gallery": []
@@ -190,8 +244,8 @@
     {
         "title": "We\u2019re back (but still down 11k in the last year",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfsspu/were_back_but_still_down_11k_in_the_last_year/",
-        "nr_comments": 26,
-        "upvotes": "49",
+        "nr_comments": 27,
+        "upvotes": "58",
         "content": {
             "text": "I made like 400 bucks regards\n",
             "gallery": [
@@ -202,8 +256,8 @@
     {
         "title": "United Airlines Boeing 737 lands in Oregon after losing panel mid-air.",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfs2zh/united_airlines_boeing_737_lands_in_oregon_after/",
-        "nr_comments": 1062,
-        "upvotes": "11.4k",
+        "nr_comments": 1088,
+        "upvotes": "11.8k",
         "content": {
             "text": null,
             "gallery": [
@@ -214,8 +268,8 @@
     {
         "title": "Everybody calm down with the boom or bust scenarios. This year should be fine. Not great, but not bad either.",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfrtl2/everybody_calm_down_with_the_boom_or_bust/",
-        "nr_comments": 20,
-        "upvotes": "17",
+        "nr_comments": 22,
+        "upvotes": "20",
         "content": {
             "text": "The outlook for the U.S. economy in 2024 presents a complex picture, characterized by a mix of cautious optimism and emerging challenges. The economy is expected to see a slowdown in growth, but with a potential for a soft landing, indicating a more moderate pace of expansion without entering a recession. Here\u2019s a synthesis of the key points from several sources:\n1.  Economic Growth: The U.S. economy is likely to experience deceleration in 2024 as the effects of monetary policy become more pronounced and post-pandemic tailwinds diminish. Real GDP growth is forecasted to slow down, with consumer spending expected to increase at a more subdued rate. Business investment and housing activity might see some improvement but will likely remain muted due to higher interest rates .\n2.  Federal Reserve Policies: The Federal Reserve\u2019s policy rates are expected to be on hold at 5.25%-5.5% until the middle of 2024. Subsequently, assuming inflation continues its moderating trajectory, there might be rate cuts starting in June, aiming for a target range of 4.00%-4.25% by the end of 2024 .\n3.  Consumer Spending and Labor Markets: Consumer spending growth is expected to slow down due to factors like diminished excess savings and plateauing wage gains. However, the tight labor market continues to support employment and income levels, suggesting that consumer spending growth, while slower, could remain positive. The labor market is showing signs of normalization, with unemployment potentially drifting higher but staying low in a historical context .\n4.  Inflation and Interest Rates: Inflation is expected to continue its steady downward trend, with forecasts suggesting 2% growth, 2% inflation, and an unemployment rate staying at roughly 4%. The demand in the economy is gradually easing following a strong 2023, but consumer spending is expected to grow more slowly as job gains diminish and banks tighten lending standards [oai_citation:4,\n\nU.S. economy: Hoping for a boring 2024\n| J.P. Morgan Asset Management\n4.  ](https://am.jpmorgan.com/us/en/asset-management/adv/insights/market-insights/investment-outlook/us-economic-outlook/).\n5.  Risks and Challenges: The factors that have driven the resilience of the U.S. economy in 2023, such as robust consumer spending and financial liquidity, could recede in 2024. This poses risks to the bullish outlook on U.S. stocks, highlighting the need for caution among investors regarding high equity valuations and the potential for interest rates to remain higher for longer .\n\nTLDR\u2026 the U.S. economy in 2024 is poised for a year of moderated growth and potential soft landing, with a focus on managing inflation and interest rates. Challenges such as slowing consumer spending and the impact of higher interest rates on investment and housing will require careful navigation, but there are also opportunities for positive outcomes if policy measures are effectively implemented.\n",
             "gallery": []
@@ -224,8 +278,8 @@
     {
         "title": "75% loss on buying ADBE calls this morning\ud83e\udd22\ud83e\udd2e",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfr4fx/75_loss_on_buying_adbe_calls_this_morning/",
-        "nr_comments": 31,
-        "upvotes": "63",
+        "nr_comments": 32,
+        "upvotes": "65",
         "content": {
             "text": "Thought the regarded after-hour traders were overreacting to the poor guidance announced in earnings yesterday. ADBE LITERALLY BEAT EARNINGS AND ANNOUNCED A $25 BILLION SHARE BUYBACK!!!!! The market is dumb asf.\n",
             "gallery": [
@@ -236,8 +290,8 @@
     {
         "title": "FOMC will be a bullish event",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfqot8/fomc_will_be_a_bullish_event/",
-        "nr_comments": 131,
-        "upvotes": "189",
+        "nr_comments": 137,
+        "upvotes": "201",
         "content": {
             "text": "People are worried that the last hot CPI and PPI readings will translate to a hawkish Powell this upcoming FOMC. Market currently expects 3 rate cuts with a cut starting in June. This FOMC will have dot plots that will clearly show if the market is wrong on that call.\nRegardless of how many rate cuts the dot plot suggests, I don't think it matters. This whole year we went from pricing in 7 rate cuts to now 3 and the market still has gone up. Will it make a difference if we go from 3 to potentially 2? I don't think so.\nJerome has been dovish for a while now. He seems to be confident that inflation is still trending down and insists that rate cuts will happen before hitting the 2% target. I don't expect him to suddenly turn hawkish. He will likely use words like \"bumpy\" to describe path of inflation meaning he believes these recent readings are kind of a fluke or blame lags in housing.\nThere is absolutely no way we get a sell off from FOMC, or I will ban myself permanently from this sub.\n",
             "gallery": []
@@ -247,7 +301,7 @@
         "title": "Full Time Day Trader Commision & Gains",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfpzqv/full_time_day_trader_commision_gains/",
         "nr_comments": 27,
-        "upvotes": "1",
+        "upvotes": "2",
         "content": {
             "text": "15 Day Period.\n\nMostly Scalper\nDoes momentum trade if momentum and catalyst is strong.\n-Swing trade\n-Long term when I find a hidden gem.\n\n",
             "gallery": [
@@ -258,8 +312,8 @@
     {
         "title": "As always, FYC and FYP",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfpa86/as_always_fyc_and_fyp/",
-        "nr_comments": 36,
-        "upvotes": "441",
+        "nr_comments": 37,
+        "upvotes": "456",
         "content": {
             "text": null,
             "gallery": [
@@ -270,72 +324,12 @@
     {
         "title": "How to not go broke trading options (PSA)",
         "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfp0d2/how_to_not_go_broke_trading_options_psa/",
-        "nr_comments": 14,
-        "upvotes": "13",
+        "nr_comments": 15,
+        "upvotes": "15",
         "content": {
             "text": "That sexy post of your portfolio going up 1000% over night might make you feel good, but you should know that isn\u2019t sustainable. In fact you\u2019ll probably lose it all on the very next trade. Stop saying \u201cI got greedy\u2026\u201d when you were greedy from the start.\nHere is a normal options position. It\u2019s not sexy. It\u2019s not going to make me rich over night. It just hedges a portion of my portfolio against an anticipated market downturn, and if it doesn\u2019t hit, it\u2019s no big deal. I\u2019d actually prefer it that way.\n",
             "gallery": [
                 "https://i.redd.it/nzspmiqtfkoc1.jpeg"
-            ]
-        }
-    },
-    {
-        "title": "First week day trading",
-        "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfovvm/first_week_day_trading/",
-        "nr_comments": 37,
-        "upvotes": "119",
-        "content": {
-            "text": null,
-            "gallery": [
-                "https://i.redd.it/qxu9968uekoc1.jpeg"
-            ]
-        }
-    },
-    {
-        "title": "Cat shaped = bullish on JPM",
-        "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfojti/cat_shaped_bullish_on_jpm/",
-        "nr_comments": 19,
-        "upvotes": "66",
-        "content": {
-            "text": null,
-            "gallery": [
-                "https://i.redd.it/odfqsieackoc1.jpeg"
-            ]
-        }
-    },
-    {
-        "title": "Corporate defaults",
-        "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfoggr/corporate_defaults/",
-        "nr_comments": 54,
-        "upvotes": "219",
-        "content": {
-            "text": "https://www.ft.com/content/f811649b-f66d-43aa-8a66-2412a4f0be50\n",
-            "gallery": [
-                "https://i.redd.it/jup65lfkbkoc1.jpeg"
-            ]
-        }
-    },
-    {
-        "title": "How do you win at this game?",
-        "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfoauk/how_do_you_win_at_this_game/",
-        "nr_comments": 838,
-        "upvotes": "1121",
-        "content": {
-            "text": "Pretty much losses on every trade I\u2019ve ever made. Started trading in 2018, most of the money was Biden Pandemic bucks. \n",
-            "gallery": [
-                "https://i.redd.it/uqdix5seakoc1.jpeg"
-            ]
-        }
-    },
-    {
-        "title": "\ud83e\udee8",
-        "url": "https://old.reddit.com/r/wallstreetbets/comments/1bfo50h/_/",
-        "nr_comments": 11,
-        "upvotes": "45",
-        "content": {
-            "text": null,
-            "gallery": [
-                "https://i.redd.it/mq2t50r59koc1.jpeg"
             ]
         }
     }
