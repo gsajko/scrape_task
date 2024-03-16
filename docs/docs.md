@@ -15,3 +15,7 @@ You need to enable write access to the repository.
 Go to your repository on GitHub, click on "Settings", then "Actions", "General" and at "Workflow permissions" enable "Read and write permissions".
 
 ![image](docs/gh_action.jpg)
+
+### Scrape Manual Trigger:
+To trigger the scraper manually, go to the "Actions" tab in your repository, click on "Scrape" and then "Run workflow".
+Just don't run two scrapers at the same time, it will cause a conflict.
