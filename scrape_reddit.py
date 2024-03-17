@@ -1,10 +1,49 @@
-# %%
 import json
 import os
-from typing import Dict, List, Optional
+import time
+from functools import wraps
+from typing import Callable, Dict, List, Optional
 
 import requests
 from bs4 import BeautifulSoup
+from google.cloud import firestore
+
+
+def retry(max_retries: int = 3, delay: int = 60, backoff: int = 15) -> Callable:
+    """
+    Decorator that retries a function a specified number of times with a delay
+    between retries.
+
+    Args:
+        max_retries (int): The maximum number of retries. Default is 3.
+        delay (int): The delay in seconds between retries. Default is 60.
+        backoff (int): The factor by which the delay increases after each retry.
+        Default is 15.
+
+    Returns:
+        Callable: The decorated function.
+
+    """
+
+    def decorator(func: Callable) -> Callable:
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            mtries, mdelay = max_retries, delay
+            while mtries > 1:
+                try:
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    msg = f"{func.__name__} failed with {str(e)},"
+                    msg += f" Retrying in {mdelay} seconds..."
+                    print(msg)
+                    time.sleep(mdelay)
+                    mtries -= 1
+                    mdelay *= backoff
+            return func(*args, **kwargs)
+
+        return wrapper
+
+    return decorator
 
 
 def scrape_posts(subreddit: str, num_clicks: int = 2) -> List[BeautifulSoup]:
@@ -12,9 +51,9 @@ def scrape_posts(subreddit: str, num_clicks: int = 2) -> List[BeautifulSoup]:
     headers = {"User-Agent": "Mozilla/5.0"}
     posts = []
 
+    @retry()
     def scrape(url):
         response = requests.get(url, headers=headers)
-        # TODO: handle errors
         soup = BeautifulSoup(response.text, "html.parser")
         new_posts = soup.find_all("div", class_="thing")
         url_next = soup.find("span", class_="next-button").a["href"]
@@ -55,6 +94,7 @@ def extract_post_details(post_el: BeautifulSoup) -> Dict[str, str]:
     return post
 
 
+@retry()
 def get_content(url: str) -> Dict[str, Optional[str]]:
     headers = {"User-Agent": "Mozilla/5.0"}
     response = requests.get(url, headers=headers)
@@ -138,17 +178,30 @@ def scrape_reddit(
     with open(file_path, "w") as f:
         json.dump(filtered_posts, f, indent=4)
     print(f"Posts saved to file: {file_path}")
+    return file_path
 
 
-# %%
-# scrape_reddit(subreddit="games", num_pages=3, min_nr_comments=0)
+@retry()
+def add_document_to_firestore(data_path, collection: str):
+    with open(data_path, "r") as file:
+        data = json.load(file)
+    # Initialize Firestore client
+    db = firestore.Client()
+    # Create a reference to the document
+    doc_ref = db.collection(collection).document()
+    # Define the data to be stored in the document
+    # Set the document data
+    if isinstance(data, list):
+        data = {"data": data}  # Wrap the list in a dictionary
+    doc_ref.set(data)
+    print(f"Document successfully written to {collection}")
 
 
-# %%
 if __name__ == "__main__":
     subreddit = os.environ.get("SUBREDDIT")
     num_pages = int(os.environ.get("NUM_PAGES"))
     min_nr_comments = int(os.environ.get("MIN_NR_COMMENTS"))
     print(num_pages)
     print(type(num_pages))
-    scrape_reddit(subreddit, num_pages, min_nr_comments)
+    data_path = scrape_reddit(subreddit, num_pages, min_nr_comments)
+    add_document_to_firestore(data_path, collection=f"reddit_{subreddit}")

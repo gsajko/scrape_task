@@ -1,4 +1,3 @@
-# %%
 import datetime
 import json
 import os
@@ -6,6 +5,7 @@ import time
 from functools import wraps
 from typing import Callable, List
 
+from google.cloud import firestore
 from tweety import Twitter
 from tweety.types.twDataTypes import SelfThread
 
@@ -123,6 +123,22 @@ def simplify_and_save_tweets(tweet_file: str) -> None:
         json.dump(simple_tweets, file, indent=4)
 
 
+@retry()
+def add_document_to_firestore(data_path, collection: str):
+    with open(data_path, "r") as file:
+        data = json.load(file)
+    # Initialize Firestore client
+    db = firestore.Client()
+    # Create a reference to the document
+    doc_ref = db.collection(collection).document()
+    # Define the data to be stored in the document
+    # Set the document data
+    if isinstance(data, list):
+        data = {"data": data}  # Wrap the list in a dictionary
+    doc_ref.set(data)
+    print(f"Document successfully written to {collection}")
+
+
 def main(app: Twitter, handle: str, hashtag: str, min_faves: int, h_pages: int) -> None:
     """
     Main function for scraping Twitter data.
@@ -140,9 +156,11 @@ def main(app: Twitter, handle: str, hashtag: str, min_faves: int, h_pages: int) 
     """
     all_tweets = get_user_tweets(app, handle, pages=2)
     user_tweets = save_tweets_to_file(all_tweets, keyword=handle, nr_tweets=15)
+    add_document_to_firestore(user_tweets, collection=f"twitter_user_{handle}")
 
     search_top = get_hashtag_tweets(app, hashtag, min_faves, pages=h_pages)
     hashtag_tweets = save_top_tweets_to_file(search_top, keyword=hashtag)
+    add_document_to_firestore(hashtag_tweets, collection=f"twitter_trends_{hashtag}")
 
     simplify_and_save_tweets(user_tweets)
     simplify_and_save_tweets(hashtag_tweets)
@@ -160,24 +178,3 @@ if __name__ == "__main__":
     h_pages = int(os.environ.get("PAGES"))
 
     main(app, handle, hashtag, min_faves, h_pages)
-
-# %%
-# from dotenv import load_dotenv
-# load_dotenv()
-# username = os.getenv("TWITTER_USERNAME")
-# password = os.getenv("TWITTER_PASSWORD")
-# app = Twitter("session")
-# app.sign_in(username, password)
-# # %%
-
-# handle = "elonmusk"
-# # app.get_tweets(handle, pages=2)
-# all_tweets = get_user_tweets(app, handle, pages=2)
-# user_tweets = save_tweets_to_file(all_tweets, keyword=handle, nr_tweets=15)
-# # %%
-# hashtag = "doge"
-# search_top = get_hashtag_tweets(app, hashtag=hashtag, min_faves=100, pages=20)
-# hashtag_tweets = save_top_tweets_to_file(search_top, keyword=hashtag)
-
-
-# %%
