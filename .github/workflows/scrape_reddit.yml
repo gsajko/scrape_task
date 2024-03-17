@@ -2,8 +2,7 @@ name: scrape reddit
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # Run every 2 hours
-    # - cron:  '55 5 * * *' # Ref https://crontab.guru/examples.html
+    - cron:  '0 0 30 2 *'
   workflow_dispatch:
 
 jobs:

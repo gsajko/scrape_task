@@ -2,8 +2,7 @@ name: scrape twitter
 
 on:
   schedule:
-    # - cron:  '55 6 1 1 1' # Ref https://crontab.guru/examples.html
-    - cron: '15 */2 * * *' # Run every 2 hours
+    - cron:  '0 0 30 2 *'
   workflow_dispatch:
 
 jobs:
