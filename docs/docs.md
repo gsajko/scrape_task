@@ -16,6 +16,7 @@ Go to your repository on GitHub, click on "Settings", then "Actions", "General" 
 
 ![image](docs/gh_action.jpg)
 
+
 ### Scrape Manual Trigger:
 To trigger the scraper manually, go to the "Actions" tab in your repository, click on "Scrape" and then "Run workflow".
 Just don't run two scrapers at the same time, it will cause a conflict.
