@@ -51,7 +51,7 @@ jobs:
           HANDLE: "elonmusk"
           # The Twitter user handle to scrape tweets from.
           # ----------------------------------------------
-          HASHTAG: "doge"
+          HASHTAG: "BTC"
           # The hashtag to search for
           MIN_FAVES: 300
           # The minimum number of likes a tweet must have to be considered
