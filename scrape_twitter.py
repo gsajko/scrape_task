@@ -121,6 +121,7 @@ def simplify_and_save_tweets(tweet_file: str) -> None:
     simple_tweet_file = tweet_file.replace("raw", "simple")
     with open(simple_tweet_file, "w") as file:
         json.dump(simple_tweets, file, indent=4)
+    return simple_tweet_file
 
 
 @retry()
@@ -162,8 +163,10 @@ def main(app: Twitter, handle: str, hashtag: str, min_faves: int, h_pages: int) 
     hashtag_tweets = save_top_tweets_to_file(search_top, keyword=hashtag)
     add_document_to_firestore(hashtag_tweets, collection=f"twitter_trends_{hashtag}")
 
-    simplify_and_save_tweets(user_tweets)
-    simplify_and_save_tweets(hashtag_tweets)
+    simpl_user = simplify_and_save_tweets(user_tweets)
+    add_document_to_firestore(simpl_user, collection=f"twitter_user_{handle}_simple")
+    simpl_hashtag = simplify_and_save_tweets(hashtag_tweets)
+    add_document_to_firestore(simpl_hashtag, collection=f"twitter_trends_{hashtag}_simple")
 
 
 if __name__ == "__main__":
