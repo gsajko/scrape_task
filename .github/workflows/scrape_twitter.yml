@@ -2,7 +2,8 @@ name: scrape twitter
 
 on:
   schedule:
-    - cron: '55 6 * * *' # every day at 6:55am
+    - cron: '25 * * * *'    # every hour at 25 minutes past the hour 
+        
   workflow_dispatch:
 
 jobs:
@@ -74,3 +75,5 @@ jobs:
       #----------------------------------------------
 
       - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
