@@ -166,7 +166,9 @@ def main(app: Twitter, handle: str, hashtag: str, min_faves: int, h_pages: int) 
     simpl_user = simplify_and_save_tweets(user_tweets)
     add_document_to_firestore(simpl_user, collection=f"twitter_user_{handle}_simple")
     simpl_hashtag = simplify_and_save_tweets(hashtag_tweets)
-    add_document_to_firestore(simpl_hashtag, collection=f"twitter_trends_{hashtag}_simple")
+    add_document_to_firestore(
+        simpl_hashtag, collection=f"twitter_trends_{hashtag}_simple"
+    )
 
 
 if __name__ == "__main__":
