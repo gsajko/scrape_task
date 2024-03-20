@@ -157,18 +157,20 @@ def main(app: Twitter, handle: str, hashtag: str, min_faves: int, h_pages: int) 
     """
     all_tweets = get_user_tweets(app, handle, pages=2)
     user_tweets = save_tweets_to_file(all_tweets, keyword=handle, nr_tweets=15)
-    add_document_to_firestore(user_tweets, collection=f"twitter_user_{handle}")
+    # add_document_to_firestore(user_tweets, collection=f"twitter_user_{handle}")
 
     search_top = get_hashtag_tweets(app, hashtag, min_faves, pages=h_pages)
     hashtag_tweets = save_top_tweets_to_file(search_top, keyword=hashtag)
-    add_document_to_firestore(hashtag_tweets, collection=f"twitter_trends_{hashtag}")
+    # add_document_to_firestore(hashtag_tweets, collection=f"twitter_trends_{hashtag}")
 
     simpl_user = simplify_and_save_tweets(user_tweets)
-    add_document_to_firestore(simpl_user, collection=f"twitter_user_{handle}_simple")
+    # add_document_to_firestore(simpl_user, collection=f"twitter_user_{handle}_simple")
     simpl_hashtag = simplify_and_save_tweets(hashtag_tweets)
-    add_document_to_firestore(
-        simpl_hashtag, collection=f"twitter_trends_{hashtag}_simple"
-    )
+
+    # add_document_to_firestore(
+    #     simpl_hashtag, collection=f"twitter_trends_{hashtag}_simple"
+    # )
+    return simpl_hashtag, simpl_user
 
 
 if __name__ == "__main__":

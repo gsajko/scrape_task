@@ -34,7 +34,9 @@ Go to your repository on GitHub, click on "Settings", then "Actions", "General" 
 
 ### Firestore Setup:
 Notice:
-There is `cloudfree` branch, that generates scrapes and saves them to `json` files, without using Cloud Database.
+~~`There is `cloudfree` branch, that generates scrapes and saves them to `json` files, without using Cloud Database.~~
+
+I disabled push to Firestore, so for it to work you need to un-comment lines, and setup Firestore.
 
 #### GCloud Setup:
 You need to have Google Cloud account.

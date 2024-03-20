@@ -204,4 +204,4 @@ if __name__ == "__main__":
     print(num_pages)
     print(type(num_pages))
     data_path = scrape_reddit(subreddit, num_pages, min_nr_comments)
-    add_document_to_firestore(data_path, collection=f"reddit_{subreddit}")
+    # add_document_to_firestore(data_path, collection=f"reddit_{subreddit}")
