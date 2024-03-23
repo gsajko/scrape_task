@@ -1,6 +1,14 @@
 [
     {
         "username": "elonmusk",
+        "id": "1771413342919524674",
+        "created_on": "2024-03-23T05:47:06+00:00",
+        "text": "Under the hood update: Introducing Topic Models, which improve Community Notes\u2019 ability to identify notes that are helpful to people from different points of view.\n\nCommunity Notes shows notes that are found helpful by people who\u2019ve disagreed in their past ratings. Now, it will factor in both whether raters have disagreed in general as well as on the specific topic of the note. This strengthens the algorithm\u2019s ability to find notes that bridge across topics. We\u2019re initially trialing a small set of Topic Models and will monitor their effectiveness at identifying broadly helpful notes.\n\nAs always, code and details are open-source in GitHub, and your feedback helps drive improvements like this one: https://t.co/H78viix3AW",
+        "likes": "0",
+        "url": "https://twitter.com/elonmusk/status/1771413342919524674"
+    },
+    {
+        "username": "elonmusk",
         "id": "1771384235502227482",
         "created_on": "2024-03-23T03:51:27+00:00",
         "text": "Flight 4 Starship moved to the pad at Starbase for upcoming static fires https://t.co/NqKJpJEr6O",
@@ -36,7 +44,7 @@
         "id": "1771379578227077621",
         "created_on": "2024-03-23T03:32:56+00:00",
         "text": "Hear about Neuralink from someone who has our Telepathy cybertech implant!",
-        "likes": "10481",
+        "likes": "12670",
         "url": "https://twitter.com/elonmusk/status/1771379578227077621"
     },
     {
@@ -44,7 +52,7 @@
         "id": "1771287982693060783",
         "created_on": "2024-03-22T21:28:58+00:00",
         "text": "First ever post made just by thinking, using the @Neuralnk Telepathy device!",
-        "likes": "125155",
+        "likes": "129783",
         "url": "https://twitter.com/elonmusk/status/1771287982693060783"
     },
     {
@@ -52,7 +60,7 @@
         "id": "1771217542050173355",
         "created_on": "2024-03-22T16:49:04+00:00",
         "text": "We all have our demons to fight https://t.co/w4UqzHNsXQ",
-        "likes": "244841",
+        "likes": "195415",
         "url": "https://twitter.com/elonmusk/status/1771217542050173355"
     },
     {
@@ -68,7 +76,7 @@
         "id": "1771059196189868177",
         "created_on": "2024-03-22T06:19:51+00:00",
         "text": "This feature is great",
-        "likes": "22476",
+        "likes": "22631",
         "url": "https://twitter.com/elonmusk/status/1771059196189868177"
     },
     {
@@ -84,7 +92,7 @@
         "id": "1771044269731492169",
         "created_on": "2024-03-22T05:20:32+00:00",
         "text": "Some Falcon landing shots https://t.co/yv4FJjHVNq",
-        "likes": "278940",
+        "likes": "280664",
         "url": "https://twitter.com/elonmusk/status/1771044269731492169"
     },
     {
@@ -100,7 +108,7 @@
         "id": "1770854755373359215",
         "created_on": "2024-03-21T16:47:29+00:00",
         "text": "Wow",
-        "likes": "63617",
+        "likes": "63627",
         "url": "https://twitter.com/elonmusk/status/1770854755373359215"
     },
     {
@@ -108,15 +116,7 @@
         "id": "1770839336725979459",
         "created_on": "2024-03-21T15:46:13+00:00",
         "text": "They are",
-        "likes": "142428",
+        "likes": "142407",
         "url": "https://twitter.com/elonmusk/status/1770839336725979459"
-    },
-    {
-        "username": "elonmusk",
-        "id": "1770838158269186055",
-        "created_on": "2024-03-21T15:41:32+00:00",
-        "text": "Squatters Can Now Come In And Steal Your Home With No Consequences https://t.co/0cZGLIuNmt",
-        "likes": "0",
-        "url": "https://twitter.com/elonmusk/status/1770838158269186055"
     }
 ]
