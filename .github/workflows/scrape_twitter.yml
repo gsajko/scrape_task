@@ -1,79 +1,79 @@
-name: scrape twitter
+# name: scrape twitter
 
-on:
-  schedule:
-    - cron: '25 * * * *'    # every hour at 25 minutes past the hour 
+# on:
+#   schedule:
+#     - cron: '25 * * * *'    # every hour at 25 minutes past the hour 
         
-  workflow_dispatch:
+#   workflow_dispatch:
 
-jobs:
-  build:
-    name: Build
-    runs-on: ubuntu-20.04
-    steps:
-      #----------------------------------------------
-      #       check-out repo and set-up python     
-      #----------------------------------------------
-      - name: Check out repository
-        uses: actions/checkout@v4
-      - name: Set up python 
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.10"
-
-
-      #----------------------------------------------
-      # --------    install creds    -------   
-      #----------------------------------------------
-      - name: Install creds
-        uses: 'google-github-actions/auth@v2'
-        with:
-          credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
-
-      #----------------------------------------------
-      #  -----  install & configure poetry  -----      
-      #----------------------------------------------
-      - name: Install Poetry Action
-        uses: snok/install-poetry@v1.3.3
-
-        with:
-          virtualenvs-create: true
-          virtualenvs-in-project: true
-
-      #----------------------------------------------
-      # --------    install dependencies    -------   
-      #----------------------------------------------
-      - name: Install dependencies
-        run: poetry install --no-interaction --no-root --no-dev
-      #----------------------------------------------
-      # run scrape
-      #----------------------------------------------       
-      - name: Scrape
-        run: |
-          source .venv/bin/activate
-          poetry run python -c 'import os;print(os.environ)'
-          poetry run python scrape_twitter.py
-        env:
-          # -------- Twitter Login Credentials --------
-          TWITTER_USERNAME: ${{ secrets.TWITTER_USERNAME }}
-          TWITTER_PASSWORD: ${{ secrets.TWITTER_PASSWORD }}
-          # ----------------------------------------------
-          HANDLE: "elonmusk"
-          # The Twitter user handle to scrape tweets from.
-          # ----------------------------------------------
-          HASHTAG: "BTC"
-          # The hashtag to search for
-          MIN_FAVES: 300
-          # The minimum number of likes a tweet must have to be considered
-          PAGES: 50
-          # The number of pages to scrape
-          # More pages will result in more tweets, but it can be Rate Limited.
+# jobs:
+#   build:
+#     name: Build
+#     runs-on: ubuntu-20.04
+#     steps:
+#       #----------------------------------------------
+#       #       check-out repo and set-up python     
+#       #----------------------------------------------
+#       - name: Check out repository
+#         uses: actions/checkout@v4
+#       - name: Set up python 
+#         uses: actions/setup-python@v4
+#         with:
+#           python-version: "3.10"
 
 
-      #----------------------------------------------
-      # publish to github
-      #----------------------------------------------
+#       #----------------------------------------------
+#       # --------    install creds    -------   
+#       #----------------------------------------------
+#       - name: Install creds
+#         uses: 'google-github-actions/auth@v2'
+#         with:
+#           credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
 
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
+#       #----------------------------------------------
+#       #  -----  install & configure poetry  -----      
+#       #----------------------------------------------
+#       - name: Install Poetry Action
+#         uses: snok/install-poetry@v1.3.3
+
+#         with:
+#           virtualenvs-create: true
+#           virtualenvs-in-project: true
+
+#       #----------------------------------------------
+#       # --------    install dependencies    -------   
+#       #----------------------------------------------
+#       - name: Install dependencies
+#         run: poetry install --no-interaction --no-root --no-dev
+#       #----------------------------------------------
+#       # run scrape
+#       #----------------------------------------------       
+#       - name: Scrape
+#         run: |
+#           source .venv/bin/activate
+#           poetry run python -c 'import os;print(os.environ)'
+#           poetry run python scrape_twitter.py
+#         env:
+#           # -------- Twitter Login Credentials --------
+#           TWITTER_USERNAME: ${{ secrets.TWITTER_USERNAME }}
+#           TWITTER_PASSWORD: ${{ secrets.TWITTER_PASSWORD }}
+#           # ----------------------------------------------
+#           HANDLE: "elonmusk"
+#           # The Twitter user handle to scrape tweets from.
+#           # ----------------------------------------------
+#           HASHTAG: "BTC"
+#           # The hashtag to search for
+#           MIN_FAVES: 300
+#           # The minimum number of likes a tweet must have to be considered
+#           PAGES: 50
+#           # The number of pages to scrape
+#           # More pages will result in more tweets, but it can be Rate Limited.
+
+
+#       #----------------------------------------------
+#       # publish to github
+#       #----------------------------------------------
+
+#       - uses: stefanzweifel/git-auto-commit-action@v5
+#         with:
+#           commit_author: "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>"
