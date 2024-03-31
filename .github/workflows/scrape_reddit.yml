@@ -2,7 +2,8 @@ name: scrape reddit
 
 on:
   schedule:
-    - cron: '55 5 * * *' # every day at 5:55am
+    # - cron: '55 5 * * *' # every day at 5:55am
+    - cron: '59 6 30 2 *' # every 30th of February at 6:59am
   workflow_dispatch:
 
 jobs:
